@@ -8,11 +8,28 @@ version = "0.1.0"
 description = "Reusable Django app that serves an mkdocs-built site from the same Django project the app is installed in, behind a configurable access gate."
 readme = "README.md"
 license = "MIT"
+authors = [{ name = "Aníbal Pacheco", email = "apacheco.uy@gmail.com" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.0",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
 requires-python = ">=3.12"
 dependencies = [
     "Django>=5.2",
     "PyYAML",
 ]
+
+[project.urls]
+Homepage = "https://github.com/anibalpacheco/mkview"
+Issues = "https://github.com/anibalpacheco/mkview/issues"
 
 [tool.setuptools.packages.find]
 include = ["mkview*"]
