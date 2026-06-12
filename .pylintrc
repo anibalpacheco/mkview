@@ -1,0 +1,18 @@
+[MASTER]
+
+# Django's URL namespace convention, not a constant we can rename.
+good-names=app_name
+
+disable=
+    C0114,
+    C0115,
+    C0116,
+    C0415,
+    W0718,
+    W0511,
+    R0903,
+    R0801,
+    R0913,
+    R0914,
+    R0917,
+

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkview"
+version = "0.1.0"
+description = "Reusable Django app that serves an mkdocs-built site from the same Django project the app is installed in, behind a configurable access gate."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "Django>=5.2",
+    "PyYAML",
+]
+
+[tool.setuptools.packages.find]
+include = ["mkview*"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+target-version = ["py312", "py313", "py314"]
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "test_settings"
