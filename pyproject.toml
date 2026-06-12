@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mkview"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reusable Django app that serves an mkdocs-built site from the same Django project the app is installed in, behind a configurable access gate."
 readme = "README.md"
 license = "MIT"
