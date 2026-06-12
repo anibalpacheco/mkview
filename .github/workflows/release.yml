@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  pypi:
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/mkview/
+    permissions:
+      id-token: write  # OIDC for PyPI trusted publishing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - run: pip install -e . build
+      - run: python -m django test mkview --settings=test_settings
+      - run: python -m build
+      - uses: pypa/gh-action-pypi-publish@release/v1
