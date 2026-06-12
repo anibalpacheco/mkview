@@ -3,7 +3,7 @@
 [![CI](https://github.com/anibalpacheco/mkview/actions/workflows/ci.yml/badge.svg)](https://github.com/anibalpacheco/mkview/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/mkview)](https://pypi.org/project/mkview/)
 [![License](https://img.shields.io/github/license/anibalpacheco/mkview)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.12%20%7C%203.13%20%7C%203.14-blue)
+[![Python](https://img.shields.io/pypi/pyversions/mkview)](https://pypi.org/project/mkview/)
 ![Django](https://img.shields.io/badge/django-5.2%20%7C%206.0-092E20)
 
 Reusable Django app that serves an mkdocs-built site from the same Django
